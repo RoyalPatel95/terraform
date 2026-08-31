@@ -1,3 +1,10 @@
+variable "instances" {
+  type = map(object({
+    instance_type = string
+    name = string
+  }))
+}
+
 variable "instance_type" {
   # default = "t3.micro"
   type = string
